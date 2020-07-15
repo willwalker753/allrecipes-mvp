@@ -62,7 +62,7 @@ export default class Account extends Component {
             .then(response => {         
                 recipeArray = response.data;
                 recipeArray.map(item => {
-                    item.sourceUrl = 'http://localhost:3000/recipe/'+item.id;
+                    item.sourceUrl = 'https://allrecipes-mvp.vercel.app/recipe/'+item.id;
                 })
                 console.log(recipeArray);
                 return recipeArray
@@ -103,7 +103,7 @@ export default class Account extends Component {
         console.log(array);
         if(array.length == 0){
             alert('You do not have any recipes in your favorites');
-            window.location.replace('http://localhost:3000/');
+            window.location.replace('https://allrecipes-mvp.vercel.app/');
         }
     }
 

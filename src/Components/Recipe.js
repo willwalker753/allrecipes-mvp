@@ -26,7 +26,7 @@ export default class Recipe extends Component {
       }
       else {
         let recipeId = window.location.href;
-        recipeId = recipeId.replace('http://localhost:3000/recipe/','');
+        recipeId = recipeId.replace('https://allrecipes-mvp.vercel.app/recipe/','');
         let json = {
           'userId': userId,
           'recipeId': recipeId
@@ -41,7 +41,7 @@ export default class Recipe extends Component {
     }
     componentDidMount() {
         let recipeId = window.location.href;
-        recipeId = recipeId.replace('http://localhost:3000/recipe/','');
+        recipeId = recipeId.replace('https://allrecipes-mvp.vercel.app/recipe/','');
         console.log(recipeId);
         let url = 'https://api.spoonacular.com/recipes/'+recipeId+'/information?apiKey='+apiKey;
         fetch(url)

@@ -59,7 +59,7 @@ export default class Results extends Component {
             }
             for(let i=0;i<10;i++){
                 array[i].image = 'https://spoonacular.com/recipeImages/'+array[i].id+'-312x150.jpg';
-                array[i].sourceUrl = 'http://localhost:3000/recipe/'+array[i].id;
+                array[i].sourceUrl = 'https://allrecipes-mvp.vercel.app/recipe/'+array[i].id;
             }
 
           return (
