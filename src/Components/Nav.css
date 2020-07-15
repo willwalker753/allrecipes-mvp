@@ -1,0 +1,10 @@
+#nav {
+	display: flex;
+	justify-content: space-around;
+	padding-left:0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	list-style: none;
+	background-color: grey;
+	color:white;
+}
